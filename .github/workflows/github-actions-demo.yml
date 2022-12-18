@@ -15,5 +15,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: This test should fail.
+        run: /bin/false
       - run: echo "🍏 This job's status is ${{ job.status }}."
       
